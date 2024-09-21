@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MANG TINAPAY NI ADZU</h1>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="item">
+                <h3>1. Spaghetti - 50</h3>
+                <div>Ready in 5 mins</div>
+            </div>
+            <div class="item">
+                <h3>2. Burger - 20</h3>
+                <div>Ready in 3 mins</div>
+            </div>
+            <!-- Add more items -->
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <input type="text" id="foodNumber" placeholder="Enter food number" required>
+            <input type="email" id="customerEmail" placeholder="Your email" required>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact us at: info@restaurant.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
